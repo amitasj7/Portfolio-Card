@@ -478,6 +478,7 @@ main {
   .social-container {
     padding: 5px; /* Adjust padding for smaller screens */
     margin-top: 3%; /* Reduce margin-top for smaller screens */
+    margin-left: -6%;
   }
 
   .social-list {
@@ -2118,7 +2119,7 @@ textarea.form-input::-webkit-resizer {
 
 .buttons {
   position: fixed; /* Fixed position */
-  bottom: 7%; /* Bottom gap */
+  bottom: 5%; /* Bottom gap */
   left: 60%; /* Default left position */
   transform: translateX(-50%); /* Center horizontally */
   display: flex; /* Flexbox layout */
