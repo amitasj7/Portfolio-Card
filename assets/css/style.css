@@ -333,7 +333,7 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 15px;
+  gap: 6%;
 }
 
 .avatar-box {
@@ -355,7 +355,7 @@ main {
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   width: max-content;
-  padding: 3px 12px;
+  margin-top: -4%;
   border-radius: 8px;
 }
 
@@ -485,17 +485,18 @@ main {
   }
 
   .social-item .social-link {
-    font-size: 16px; /* Reduce font size on smaller screens */
+    font-size: 21px; /* Reduce font size on smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .social-container {
     margin-top: 2%; /* Further reduce margin-top on very small screens */
+    margin-left: -6%;
   }
 
   .social-item .social-link {
-    font-size: 14px; /* Further reduce font size for very small screens */
+    font-size: 18px; /* Further reduce font size for very small screens */
   }
 }
 
@@ -508,7 +509,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: hsla(0, 0%, 18%, 0.75);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -519,7 +520,7 @@ main {
 .navbar-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 0 10px;
 }
@@ -2117,7 +2118,7 @@ textarea.form-input::-webkit-resizer {
 
 .buttons {
   position: fixed; /* Fixed position */
-  bottom: 30px; /* Bottom gap */
+  bottom: 7%; /* Bottom gap */
   left: 60%; /* Default left position */
   transform: translateX(-50%); /* Center horizontally */
   display: flex; /* Flexbox layout */
@@ -2178,12 +2179,12 @@ textarea.form-input::-webkit-resizer {
 }
 
 /* Media query for screens smaller than laptop size */
-@media (max-width: 1250px) { /* Adjust this value as needed */
+@media (max-width: 1250px) {
+  /* Adjust this value as needed */
   .buttons {
     left: 50%; /* Set to 50% for smaller screens */
   }
 }
-
 
 /* For Skills section */
 .container {
