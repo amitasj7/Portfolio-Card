@@ -1,15 +1,3 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
   /**
    * colors
@@ -454,6 +442,18 @@ main {
   font-style: normal;
 }
 
+/* Parent div for social links */
+.social-container {
+  display: flex;
+  justify-content: center; /* Center the social list */
+  flex-wrap: wrap; /* Allow items to wrap if needed */
+  padding: 10px; /* Add some padding around the container */
+  width: 100%; /* Make the container full width */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  margin-top: 5%; /* Added margin-top */
+}
+
+/* Social list styles */
 .social-list {
   display: flex;
   justify-content: flex-start;
@@ -461,6 +461,7 @@ main {
   gap: 15px;
   padding-bottom: 4px;
   padding-left: 7px;
+  flex-wrap: wrap; /* Allow the items to wrap onto the next line */
 }
 
 .social-item .social-link {
@@ -470,6 +471,32 @@ main {
 
 .social-item .social-link:hover {
   color: var(--light-gray);
+}
+
+/* Responsive styles for the parent div */
+@media (max-width: 768px) {
+  .social-container {
+    padding: 5px; /* Adjust padding for smaller screens */
+    margin-top: 3%; /* Reduce margin-top for smaller screens */
+  }
+
+  .social-list {
+    gap: 10px; /* Reduce the gap between items */
+  }
+
+  .social-item .social-link {
+    font-size: 16px; /* Reduce font size on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .social-container {
+    margin-top: 2%; /* Further reduce margin-top on very small screens */
+  }
+
+  .social-item .social-link {
+    font-size: 14px; /* Further reduce font size for very small screens */
+  }
 }
 
 /*-----------------------------------*\
@@ -890,11 +917,15 @@ main {
  */
 
 .skills-title {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+  color: #f08e05;
+  font-weight: bold;
+  font-size: calc(11 * 10%);
 }
 
 .skills-list {
   padding: 20px;
+  margin: 3% 8%;
 }
 
 .skills-item:not(:last-child) {
@@ -904,8 +935,8 @@ main {
 .skill .title-wrapper {
   display: flex;
   align-items: center;
-  gap: 5px;
-  margin-bottom: 8px;
+  gap: 10px;
+  margin-bottom: 5px;
 }
 
 .skill .title-wrapper data {
@@ -923,7 +954,7 @@ main {
 
 .skill-progress-fill {
   background: var(--text-gradient-yellow);
-  height: 100%;
+  height: 70%;
   border-radius: inherit;
 }
 
@@ -2086,8 +2117,8 @@ textarea.form-input::-webkit-resizer {
 
 .buttons {
   position: fixed; /* Fixed position */
-  bottom: 30px; /* Bottom se 20px gap */
-  left: 50%; /* Left se 50% */
+  bottom: 30px; /* Bottom gap */
+  left: 60%; /* Default left position */
   transform: translateX(-50%); /* Center horizontally */
   display: flex; /* Flexbox layout */
   justify-content: center; /* Center horizontally */
@@ -2123,20 +2154,12 @@ textarea.form-input::-webkit-resizer {
   text-align: center;
   border: none;
   background-size: 300% 100%;
-
   border-radius: 50px;
-  moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
 .btn-hover:hover {
   background-position: 100% 0;
-  moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
 }
 
 .btn-hover:focus {
@@ -2154,6 +2177,14 @@ textarea.form-input::-webkit-resizer {
   box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
 }
 
+/* Media query for screens smaller than laptop size */
+@media (max-width: 1250px) { /* Adjust this value as needed */
+  .buttons {
+    left: 50%; /* Set to 50% for smaller screens */
+  }
+}
+
+
 /* For Skills section */
 .container {
   display: flex;
@@ -2165,9 +2196,9 @@ textarea.form-input::-webkit-resizer {
 .item {
   flex: 1 1 calc(50% - 20px); /* 50% width, considering the gap */
   text-align: center;
-  margin-top: -3%; /* If necessary, can adjust */
+  margin-top: -1.5%; /* If necessary, can adjust */
   padding-right: 4%; /* Padding on right for inner spacing */
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 /* Responsive design for smaller screens */
@@ -2178,3 +2209,12 @@ textarea.form-input::-webkit-resizer {
   }
 }
 
+/* for divider  */
+.divider {
+  height: 1px; /* Height of the divider */
+  background-color: white; /* Color of the divider */
+  margin: 20px 0; /* Add space above and below the divider */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  margin-top: -0.5%;
+}
