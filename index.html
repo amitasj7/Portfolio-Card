@@ -11,8 +11,8 @@
   -->
     <link
       rel="shortcut icon"
-      href="./assets/images/logo.ico"
-      type="image/x-icon"
+      href="./assets/images/portfolio2.png"
+      type="image/png"
     />
 
     <!-- link icon  -->
@@ -20,6 +20,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <!-- Include Font Awesome CSS in the <head> section -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
     <!--
     - custom css link
   -->
@@ -70,7 +76,8 @@
 
             <p class="title">MERN & Flutter Developer</p>
 
-            <div class="social-container"> <!-- Added responsive parent div -->
+            <div class="social-container">
+              <!-- Added responsive parent div -->
               <ul class="social-list">
                 <!-- for Linkedln -->
                 <li class="social-item">
@@ -92,8 +99,41 @@
                     <ion-icon name="logo-github"></ion-icon>
                   </a>
                 </li>
-                <!-- for Twitter  -->
+                <!-- for LeetCode -->
                 <li class="social-item">
+                  <a
+                    href="https://leetcode.com/u/codewhiz7"
+                    target="_blank"
+                    class="social-link"
+                    title="LeetCode"
+                  >
+                    <!-- Custom SVG for LeetCode Icon -->
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+                      alt="LeetCode"
+                      style="width: 20px; height: 20px"
+                    />
+                  </a>
+                </li>
+                <!-- Linktree Link with Tooltip -->
+                <li class="social-item">
+                  <a
+                    href="https://linktr.ee/amitasj724"
+                    target="_blank"
+                    class="social-link"
+                    title="Linktree"
+                  >
+                    <!-- Custom Linktree icon with grayscale filter -->
+                    <img
+                      src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linktree-white-icon.png"
+                      alt="Linktree"
+                      style="width: 20px; height: 20px"
+                    />
+                  </a>
+                </li>
+
+                <!-- for Twitter  -->
+                <!-- <li class="social-item">
                   <a
                     href="https://x.com/amitasj724"
                     target="_blank"
@@ -101,9 +141,9 @@
                   >
                     <ion-icon name="logo-twitter"></ion-icon>
                   </a>
-                </li>
+                </li> -->
                 <!-- for  Instagram -->
-                <li class="social-item">
+                <!-- <li class="social-item">
                   <a
                     href="https://www.instagram.com/amit.asj.7/"
                     target="_blank"
@@ -111,9 +151,9 @@
                   >
                     <ion-icon name="logo-instagram"></ion-icon>
                   </a>
-                </li>
+                </li> -->
                 <!-- for Facebook  -->
-                <li class="social-item">
+                <!-- <li class="social-item">
                   <a
                     href="https://www.facebook.com/amit.asj.7"
                     target="_blank"
@@ -121,9 +161,9 @@
                   >
                     <ion-icon name="logo-facebook"></ion-icon>
                   </a>
-                </li>
+                </li> -->
                 <!-- for Whatsapp -->
-                <li class="social-item">
+                <!-- <li class="social-item">
                   <a
                     href="https://wa.me/917023136872"
                     target="_blank"
@@ -131,9 +171,9 @@
                   >
                     <ion-icon name="logo-whatsapp"></ion-icon>
                   </a>
-                </li>
+                </li> -->
                 <!-- for Telegram -->
-                <li class="social-item">
+                <!-- <li class="social-item">
                   <a
                     href="https://t.me/AmitASJ258"
                     target="_blank"
@@ -141,12 +181,9 @@
                   >
                     <ion-icon name="paper-plane-outline"></ion-icon>
                   </a>
-                </li>
+                </li> -->
               </ul>
             </div>
-            
-
-
           </div>
 
           <!-- <hr  /> -->
@@ -157,7 +194,6 @@
             <ion-icon name="chevron-down"></ion-icon>
           </button>
         </div>
-
 
         <div class="divider"></div>
 
@@ -607,8 +643,76 @@
                 data-category="web development"
               >
                 <a
+                  href="https://github.com/amitasj7/StockVision"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      class="img-update"
+                      src="./assets/images/stock.jpg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    StockVision<span class="project-technology"
+                      >( Python, Django, AI, html, css )</span>
+                  </h3>
+                  <p class="project-description">
+                    Website that predicts stock prices using advanced analytics
+                    and machine learning for informed investment decisions.
+                  </p>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://github.com/amitasj7/LUDOGAME"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      class="img-update"
+                      src="./assets/images/ludogame.jpg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    Ludo + Snake ladder
+                    <span class="project-technology"
+                      >( HTML, CSS, Javascript )</span
+                    >
+                  </h3>
+                  <p class="project-description">
+                    Experience a fun Ludo game online featuring 3D dice. Enjoy colorful graphics and thrilling gameplay with friends!
+                  </p>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
                   href="https://github.com/amitasj7/Eduspark-Project-Industy-level"
-                  ,
                   target="_blank"
                 >
                   <figure class="project-img">
@@ -624,12 +728,17 @@
                     />
                   </figure>
 
-                  <h3 class="project-title">Eduspark</h3>
-                  <p class="project-title-update">
-                    MERN, JWT, Cloudinary, Router, Redux-Toolkit
+                  <h3 class="project-title">
+                    Eduspark
+                    <span class="project-technology"
+                      >( MERN, JWT, Router, Redux-Toolkit )</span
+                    >
+                  </h3>
+                  <p class="project-description">
+                    An educational platform where students, teachers, and admins
+                    interact for effective learning and collaboration.
                   </p>
-
-                  <p class="project-category">Web development</p>
+                  <p class="project-category">Web Development</p>
                 </a>
               </li>
 
@@ -652,9 +761,15 @@
                     />
                   </figure>
 
-                  <h3 class="project-title">Easy Mart</h3>
-                  <p class="project-title-update">
-                    React, Tailwind, Router, API
+                  <h3 class="project-title">
+                    Easymart
+                    <span class="project-technology"
+                      >( React, Tailwind, Router, API )</span
+                    >
+                  </h3>
+                  <p class="project-description">
+                    An easy platform for browsing and buying products from
+                    various categories and brands.
                   </p>
                   <p class="project-category">React</p>
                 </a>
@@ -682,9 +797,15 @@
                     />
                   </figure>
 
-                  <h3 class="project-title">Chatnova</h3>
-                  <p class="project-title-update">
-                    Flutter, Firebase, Authentication, Provider
+                  <h3 class="project-title">
+                    Chatnova
+                    <span class="project-technology"
+                      >( Flutter, Dart, Firebase, Provider )</span
+                    >
+                  </h3>
+                  <p class="project-description">
+                    A simple app for instant messaging, sharing media, and
+                    connecting with friends easily.
                   </p>
                   <p class="project-category">Applications</p>
                 </a>
@@ -712,8 +833,17 @@
                     />
                   </figure>
 
-                  <h3 class="project-title">Kitchen</h3>
-                  <p class="project-title-update">Flutter, API calls, UI-UX</p>
+                  <h3 class="project-title">
+                    Kitchen
+                    <span class="project-technology"
+                      >( Flutter, API calls, UI-UX )</span
+                    >
+                  </h3>
+                  <p class="project-description">
+                    An app for discovering recipes, planning meals, and managing
+                    grocery lists effortlessly.
+                  </p>
+
                   <p class="project-category">Applications</p>
                 </a>
               </li>
@@ -740,8 +870,16 @@
                     />
                   </figure>
 
-                  <h3 class="project-title">Insta NEWS</h3>
-                  <p class="project-title-update">Dart, Flutter, API, UI-UX</p>
+                  <h3 class="project-title">
+                    Insta NEWS
+                    <span class="project-technology"
+                      >( Dart, Flutter, API, UI-UX )</span
+                    >
+                  </h3>
+                  <p class="project-description">
+                    A news app project providing real-time updates, articles,
+                    and customizable news categories for users
+                  </p>
                   <p class="project-category">Applications</p>
                 </a>
               </li>
@@ -768,8 +906,16 @@
                     />
                   </figure>
 
-                  <h3 class="project-title">CriGroup - Project</h3>
-                  <p class="project-title-update">UI-UX, React, tailwind</p>
+                  <h3 class="project-title">
+                    CriGroup - Project
+                    <span class="project-technology"
+                      >( React, Tailwind, UI-UX )</span
+                    >
+                  </h3>
+                  <p class="project-description">
+                    A simple React UI project designed for efficient,
+                    user-friendly web application interfaces.
+                  </p>
 
                   <p class="project-category">React</p>
                 </a>
@@ -796,9 +942,15 @@
                     />
                   </figure>
 
-                  <h3 class="project-title">Virus Guard</h3>
-                  <p class="project-title-update">
-                    Dart, Routing, State Management
+                  <h3 class="project-title">
+                    Virus Guard
+                    <span class="project-technology"
+                      >( Dart, Routing, State Management )</span
+                    >
+                  </h3>
+                  <p class="project-description">
+                    Virus Guard shows real-time COVID-19 cases by country,
+                    keeping users informed about pandemic.
                   </p>
                   <p class="project-category">Applications</p>
                 </a>
@@ -826,10 +978,13 @@
                     />
                   </figure>
 
-                  <h3 class="project-title">Calculator project</h3>
-                  <p class="project-title-update">
-                    Basic HTML, CSS, JAVASCRIPT
-                  </p>
+                  <h3 class="project-title">
+                    Simple Calculator
+                    <span class="project-technology"
+                      >( Basic HTML, CSS, javascript )</span
+                    >
+                  </h3>
+                  <p></p>
 
                   <p class="project-category">Web development</p>
                 </a>
